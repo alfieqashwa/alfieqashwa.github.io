@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cello World!</title>
-    <link>https://alfieqashwa.github.io/</link>
-    <description>Recent content on Cello World!</description>
+    <title>Programming on Cello World!</title>
+    <link>https://alfieqashwa.github.io/categories/programming/</link>
+    <description>Recent content in Programming on Cello World!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Feb 2018 17:13:32 +0700</lastBuildDate>
     
-	<atom:link href="https://alfieqashwa.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://alfieqashwa.github.io/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

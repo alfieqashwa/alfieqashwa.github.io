@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Alfie Qashwa</title>
+    <title>Posts on Cello World!</title>
     <link>https://alfieqashwa.github.io/post/</link>
-    <description>Recent content in Posts on Alfie Qashwa</description>
+    <description>Recent content in Posts on Cello World!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Feb 2018 17:13:32 +0700</lastBuildDate>
@@ -17,9 +17,10 @@
       <pubDate>Sun, 18 Feb 2018 17:13:32 +0700</pubDate>
       
       <guid>https://alfieqashwa.github.io/2018/02/first-post/</guid>
-      <description>Salam Di blog ini saya akan berbagi pengetahuan dan informasi khususnya mengenai dunia komputer, programming dan internet khusus untuk pelajar SMA. Selain itu blog ini juga akan menjadi kanvas untuk menorehkan kesukaan saya menulis tentang bidang apa saja selama ada manfaatnya, serta untuk menampung catatan-catatan kecil yang berserakan dalam proses saya belajar.
-Semoga blog ini dapat memberi manfaat.
-See you !</description>
+      <description>Cello World&amp;hellip; Welcome to my blog!
+Tujuan utama blog ini saya ingin belajar latihan bagaimana caranya dapat berbagi pengetahuan dan informasi tentang dunia programming dan internet dengan bahasa sederhana yang mudah di mengerti khususnya untuk kalangan para berandal minus akademis agar mereka tertarik untuk mempelajari bagaimana berkomunikasi dengan komputer.
+Tujuan kedua adalah untuk menampung catatan-catatan saya yang berserakan selama dua tahun belakangan belajar ditemani Om Gugel.
+Tujuan ketiga adalah untuk turut sumbangsih ikutan dalam upaya memperkenalkan dunia opensource khususnya kepada generasi berandal putus sekolah yang alergi sekolah.</description>
     </item>
     
   </channel>
