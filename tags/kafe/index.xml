@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kafe on Cello World!</title>
+    <link>https://alfieqashwa.github.io/tags/kafe/</link>
+    <description>Recent content in Kafe on Cello World!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Jun 2018 02:31:42 +0700</lastBuildDate>
+    
+	<atom:link href="https://alfieqashwa.github.io/tags/kafe/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tutorial Kafe Part 1</title>
+      <link>https://alfieqashwa.github.io/2018/06/tutorial-kafe-part-1/</link>
+      <pubDate>Sun, 10 Jun 2018 02:31:42 +0700</pubDate>
+      
+      <guid>https://alfieqashwa.github.io/2018/06/tutorial-kafe-part-1/</guid>
+      <description> Tutorial Kafe Part 1 </description>
+    </item>
+    
+  </channel>
+</rss>
