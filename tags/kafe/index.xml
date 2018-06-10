@@ -6,10 +6,21 @@
     <description>Recent content in Kafe on Cello World!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Jun 2018 02:31:42 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 11 Jun 2018 00:49:26 +0700</lastBuildDate>
     
 	<atom:link href="https://alfieqashwa.github.io/tags/kafe/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tutorial Kafe Part 2</title>
+      <link>https://alfieqashwa.github.io/2018/06/tutorial-kafe-part-2/</link>
+      <pubDate>Mon, 11 Jun 2018 00:49:26 +0700</pubDate>
+      
+      <guid>https://alfieqashwa.github.io/2018/06/tutorial-kafe-part-2/</guid>
+      <description>Tutorial Kafe Part 2 Contoh modul-modul yang di implementasi pada Kafe &amp;amp; Resto Time TV Coffee di daerah Antapani, Bandung.
+Workflow    Suplier Produk Bahan Harga/kg Qty Total     Agen Beras Beras 10 rb 10 kg 100 rb   Agen Daging Daging Kambing 60 rb 1 kg 60 rb    Contoh:
+Kafe ingin menjual menu makanan Nasi Goreng Kambing dimana untuk membuat menu tersebut memerlukan sedikitnya dua produk bahan, yaitu Beras dan Daging Kambing Muda dimana masing-masing di beli dari Agen Beras dan Agen Daging.</description>
+    </item>
     
     <item>
       <title>Tutorial Kafe Part 1</title>
