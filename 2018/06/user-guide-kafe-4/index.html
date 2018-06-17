@@ -30,15 +30,18 @@
     
 
     
-    <meta name="description" content="">
-    <meta property="og:description" content="">
+    <meta name="description" content="Point of Sale (PoS) Pada postingan sebelumnya kita membahas tata-cara yang berhubungan dengan back-office. Khusus postingan User Guide Kafe Part 4 akan kita bahas transaksi penjualan dengan menggunakan aplikasi module Point of Sale.
+Jika module Sales biasa digunakan untuk transaksi penjualan secara B2B, maka Point of Sale merupakan aplikasi yang khusus melayani transaksi penjualan dimana perusahaan Anda berhadapan secara langsung, physically, dengan customer. PoS biasa digunakan pada usaha retail seperti mini-market, distro pakaian, kafe &amp; resto, bengkel, dan sebagainya.">
+    <meta property="og:description" content="Point of Sale (PoS) Pada postingan sebelumnya kita membahas tata-cara yang berhubungan dengan back-office. Khusus postingan User Guide Kafe Part 4 akan kita bahas transaksi penjualan dengan menggunakan aplikasi module Point of Sale.
+Jika module Sales biasa digunakan untuk transaksi penjualan secara B2B, maka Point of Sale merupakan aplikasi yang khusus melayani transaksi penjualan dimana perusahaan Anda berhadapan secara langsung, physically, dengan customer. PoS biasa digunakan pada usaha retail seperti mini-market, distro pakaian, kafe &amp; resto, bengkel, dan sebagainya.">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="User Guide Kafe 4">
     <meta property="og:url" content="/2018/06/user-guide-kafe-4/">
     <meta property="og:site_name" content="Cello World!">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Cello World!">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:description" content="Point of Sale (PoS) Pada postingan sebelumnya kita membahas tata-cara yang berhubungan dengan back-office. Khusus postingan User Guide Kafe Part 4 akan kita bahas transaksi penjualan dengan menggunakan aplikasi module Point of Sale.
+Jika module Sales biasa digunakan untuk transaksi penjualan secara B2B, maka Point of Sale merupakan aplikasi yang khusus melayani transaksi penjualan dimana perusahaan Anda berhadapan secara langsung, physically, dengan customer. PoS biasa digunakan pada usaha retail seperti mini-market, distro pakaian, kafe &amp; resto, bengkel, dan sebagainya.">
     
       <meta name="twitter:creator" content="@alfieqashwa">
     
@@ -278,6 +281,105 @@
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
               
+
+<h1 id="point-of-sale-pos">Point of Sale (PoS)</h1>
+
+<p>Pada postingan sebelumnya kita membahas tata-cara yang berhubungan dengan back-office. Khusus postingan <strong>User Guide Kafe Part 4</strong> akan kita bahas transaksi penjualan dengan menggunakan aplikasi <em>module</em> <strong>Point of Sale</strong>.</p>
+
+<p>Jika <em>module</em> <strong>Sales</strong> biasa digunakan untuk transaksi penjualan secara <strong>B2B</strong>, maka <strong>Point of Sale</strong> merupakan aplikasi yang khusus melayani transaksi penjualan dimana perusahaan Anda berhadapan secara langsung, <em>physically</em>, dengan <em>customer</em>. <strong>PoS</strong> biasa digunakan pada usaha retail seperti mini-market, distro pakaian, kafe &amp; resto, bengkel, dan sebagainya. Karena user guide mengambil contoh bisnis proses Kafe &amp; Resto, maka ada fitur-fitur tambahan seperti <em>Table Management</em> dan <em>Split Bill</em> yang akan kita bahas lebih rinci pada postingan kali ini.</p>
+
+<hr />
+
+<h2 id="cashier-waiter-waitress">Cashier &amp; Waiter / Waitress</h2>
+
+<p>Idealnya dalam transaksi Kafe &amp; Resto, <em>waiter/waitress</em> menghampiri <em>customer</em> di meja yang telah disediakan untuk menginput menu makanan &amp; minuman yang di pesan dengan menggunakan <em>Tablet/iPad</em>, lalu pesanan tersebut tercetak pada printer yang terletak di <em>kitchen</em> dan di <em>bar</em>. Sistem secara otomatis hanya mencetak <em>order</em> makanan saja pada printer <em>kitchen</em> serta mencetak <em>order</em> minuman saja pada printer <em>bar</em>.</p>
+
+<p><em>Culture</em> usaha kafe &amp; resto, <em>waiter/waitress</em> hanya dapat melakukan input <em>order</em> menu saja, sedangkan fitur-fitur lain seperti <em>discount</em> dan <em>payment</em> dilakukan oleh <em>cashier</em>. Dan untuk setting <em>petty-cash</em> atau laci-uang, hanya manager operasional yang memiliki akses sedangkan <em>cashier</em> tidak dapat mensetting maupun membuka laci uang tanpa izin dari manager operasional. <em>Access Right</em> masing-masing user berbeda satu sama lain dan dapat di <em>setup</em> sesuai kebutuhan.</p>
+
+<p>Namun oleh karena pada postingan saya <em>login</em> menggunakan user admin, maka <em>access right</em> pada seluruh video tidak dibatasi.</p>
+
+<p>Berikut contoh video dimana <em>waiter/waitress</em> menginput order dan <em>change table</em> menggunakan <em>iPad</em> sedangkan <em>cashier</em> melakukan pembayaran menggunakan <em>notebook</em> :</p>
+
+<hr />
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/x8auNO7yAYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<hr />
+
+<h2 id="setting-petty-cash">Setting Petty-Cash</h2>
+
+<p>Fungsi <em>petty-cash</em> atau laci uang adalah sebagai simpanan uang tunai agar kasir dapat memberikan uang kembalian dalam transaksi. Secara <em>culture</em> pihak manager operasional telah menentukan jumlah uang dalam <em>petty-cash</em> setiap hari pada saat <em>opening</em> berikut varian pecahan uang serta jumlahnya. Namun <em>by experience</em>, manager operasional hanya menentukan jumlah nominal uang di laci saja meski variasi pecahan uang dan jumlahnya tidak sama.</p>
+
+<p>Perhatikan video berikut ini:</p>
+
+<hr />
+
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/zBwGAKeK078" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+
+<hr />
+
+<p>Fitur ini bukan hanya dapat setting jumlah nominal uang di mesin laci, tetapi juga dapat setting varian pecahan uang berserta masing-masing jumlahnya. Pada video, total jumlah uang adalah sebesar <em>500 ribu rupiah</em>. Anda hanya perlu setting <em>petty-cash</em> sekali saja selama <em>habit</em> jumlah uang di laci tiap hari tidak berubah.</p>
+
+<hr />
+
+<h2 id="edit-table">Edit Table</h2>
+
+<p><em>Based on experienced</em>, formasi meja-meja kafe &amp; resto kerapkali berubah. Biasanya jika ada event tertentu atau ada <em>reservation</em> yang melebihi kapasitas meja yang tersedia sehingga meja-meja perlu digabung. <em>Cashier</em> dan manager operasional dapat mengedit <em>table</em> tanpa perlu menghadirkan staf IT untuk melakukan setting. Berikut contoh video cara membuat <em>table</em>, <em>copy-paste table</em> , menentukan kapasitas <em>table</em>, mengubah warna <em>table</em>, serta menghapus <em>table</em> :</p>
+
+<hr />
+
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/t7xT-KD3ksE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+
+<hr />
+
+<h2 id="daily-transaction-report"><em>Daily Transaction &amp; Report</em></h2>
+
+<p>Video di bawah ini merupakan contoh transaksi-transaksi yang pada aktualisasinya, baik <em>waiter/waitress</em> maupun <em>cahsier</em> akan menggunakan berbagai fitur yang tersedia, seperti memberi pesan atau <em>note</em> pada masing-masing menu agar tercetak di printer <em>kitchen &amp; bar</em>, melakukan <em>discount</em>, menambah <em>customer</em> baru jika diperlukan, mencetak <em>bill</em> pada saat <em>customer</em> meminta sebelum pembayaran untuk memeriksa menu-menu apa sajakah yang telah mereka pesan dan berapa jumlah harga masing-masing menu serta total jumlah yang harus mereka bayar. Metode pembayaran pun dapat dilakukan secara tunai atau menggunakan kartu (debit ataupun credit).</p>
+
+<p>Contoh transaksi dimulai dari <em>Opening</em> hingga <em>Closing</em>; dari menentukan jumlah <em>input</em> uang di <em>petty-cash</em> hingga <em>output</em> pada saat sebelum <em>closing</em> dan video diakhiri dengan memberikan contoh cara melihat pelaporan penjualan. Umumnya, hanya manager operasional dan <em>Owner</em> yang dapat melihat laporan transaksi, baik transaksi pembelian maupun transaksi penjualan.</p>
+
+<hr />
+
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/kqMfQbn4s5o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+
+<hr />
+
+<h2 id="pindah-table-meja">Pindah <em>Table</em> / Meja</h2>
+
+<p>Fitur <strong>Transfer</strong> berfungsi manakala customer ingin pindah meja sehingga <em>waiter/waitress</em> atau <em>cashier</em> tidak perlu melakukan input ulang order yang telah di pesan. Berikut video tentang contoh cara menggunakan fitur <strong>Transfer</strong> :</p>
+
+<hr />
+
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/f0J7t5dGAG0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+
+<hr />
+
+<h2 id="discount-by-percentage-fix-price"><em>Discount by Percentage &amp; Fix Price</em></h2>
+
+<p><em>Cashier</em> dapat melakukan <em>discount</em> untuk menu tertentu atau keseluruhan menu dalam satu meja. <em>Discount</em> dapat dilakukan <em>based on percentage</em> maupun <em>fix price</em> seperti pada video berikut ini:</p>
+
+<hr />
+
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/hsfPCxxQVr8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+
+<hr />
+
+<h2 id="split-bill-payment-methods-cash-debit-credit"><em>Split Bill &amp; Payment Methods Cash, Debit &amp; Credit</em></h2>
+
+<p>Terkadang masing-masing customer dalam satu <em>table</em> ingin membayar masing-masing menu yang di pesannya dan tidak ingin digabungkan. Terkadang pula, mereka ingin sebagian menu dibayar menggunakan tunai dan sisanya dibayar menggunakan debit oleh sebab keterbatasan uang tunai yang mereka miliki, demikian sebaliknya.</p>
+
+<p>Berikut adalah video contoh dalam menggunakan fitur <strong>Split Bill</strong> dengan berbagai metode pembayaran:</p>
+
+<hr />
+
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/fb4XAWzqXIo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+
+<hr />
+
+<p>Demikian User Guide kali ini. Jika Anda ingin menanyakan atau mengetahui lebih lanjut atau ingin menggunakan sistem aplikasi secara full dari <strong>A to Z</strong> yang telah dibahas selama 4 Part, sila cek <a href="http://circleq.co/" title="Our Website">Circle`Q</a> untuk melihat portfolio client-client serta contact kami di <a href="http://circleq.co/page/contactus" title="My Whatsapp: +62-812-8093-1980">Circle`Q</a>.</p>
+
+<p>Salam !</p>
+
               
             </div>
           </div>
@@ -539,7 +641,8 @@
                   Jun 6, 2018
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather"></div>
+              <div class="media-content hide-xs font-merryweather">Point of Sale (PoS) Pada postingan sebelumnya kita membahas tata-cara yang berhubungan dengan back-office. Khusus postingan User Guide Kafe Part 4 akan kita bahas transaksi penjualan dengan menggunakan aplikasi module Point of Sale.
+Jika module Sales biasa digunakan untuk transaksi penjualan secara B2B, maka Point of Sale merupakan aplikasi yang khusus melayani transaksi penjualan dimana perusahaan Anda berhadapan secara langsung, physically, dengan customer. PoS biasa digunakan pada usaha retail seperti mini-market, distro pakaian, kafe &amp; resto, bengkel, dan sebagainya.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
