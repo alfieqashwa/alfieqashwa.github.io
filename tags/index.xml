@@ -6,19 +6,10 @@
     <description>Recent content in Tags on Cello World!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Feb 2018 17:13:32 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 13 Jun 2018 17:35:15 +0700</lastBuildDate>
     
 	<atom:link href="https://blog.circleq.co/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Internet</title>
-      <link>https://blog.circleq.co/tags/internet/</link>
-      <pubDate>Sun, 18 Feb 2018 17:13:32 +0700</pubDate>
-      
-      <guid>https://blog.circleq.co/tags/internet/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Kafe</title>
@@ -26,15 +17,6 @@
       <pubDate>Wed, 13 Jun 2018 17:35:15 +0700</pubDate>
       
       <guid>https://blog.circleq.co/tags/kafe/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Opensource</title>
-      <link>https://blog.circleq.co/tags/opensource/</link>
-      <pubDate>Sun, 18 Feb 2018 17:13:32 +0700</pubDate>
-      
-      <guid>https://blog.circleq.co/tags/opensource/</guid>
       <description></description>
     </item>
     

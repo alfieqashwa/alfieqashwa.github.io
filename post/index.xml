@@ -53,16 +53,5 @@ Contoh Kasus Kafe ingin menjual menu makanan Nasi Goreng Kambing dimana untuk me
 Sebagai pendahuluan, sistem aplikasi ini berbasis teknologi ERP yang dapat di implementasikan baik secara online (cloud-base) maupun offline (LAN). Sistem aplikasi ini berbasis web sehingga dapat dijalankan selama terinstall aplikasi browser seperti Chrome atau Firefox pada PC, Notebook, iPad, Tablet, atau SmartPhone.</description>
     </item>
     
-    <item>
-      <title>First Post</title>
-      <link>https://blog.circleq.co/2018/02/first-post/</link>
-      <pubDate>Sun, 18 Feb 2018 17:13:32 +0700</pubDate>
-      
-      <guid>https://blog.circleq.co/2018/02/first-post/</guid>
-      <description>Cello World&amp;hellip; Welcome to my blog!
-Please comeback later until I have an idea to find out what kind of articles should I post here :)
-See you in my next post !</description>
-    </item>
-    
   </channel>
 </rss>

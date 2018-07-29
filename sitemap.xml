@@ -23,11 +23,6 @@
   </url>
   
   <url>
-    <loc>https://blog.circleq.co/2018/02/first-post/</loc>
-    <lastmod>2018-02-18T17:13:32+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.circleq.co/archives/</loc>
     <priority>0</priority>
   </url>
@@ -44,12 +39,6 @@
   </url>
   
   <url>
-    <loc>https://blog.circleq.co/tags/internet/</loc>
-    <lastmod>2018-02-18T17:13:32+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.circleq.co/categories/kafe/</loc>
     <lastmod>2018-06-13T17:35:15+07:00</lastmod>
     <priority>0</priority>
@@ -62,26 +51,14 @@
   </url>
   
   <url>
-    <loc>https://blog.circleq.co/tags/opensource/</loc>
-    <lastmod>2018-02-18T17:13:32+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.circleq.co/post/</loc>
     <lastmod>2018-06-13T17:35:15+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.circleq.co/categories/programming/</loc>
-    <lastmod>2018-02-18T17:13:32+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.circleq.co/tags/</loc>
-    <lastmod>2018-02-18T17:13:32+07:00</lastmod>
+    <lastmod>2018-06-13T17:35:15+07:00</lastmod>
     <priority>0</priority>
   </url>
   
