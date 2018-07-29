@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Cello World!</title>
-    <link>https://alfieqashwa.github.io/tags/</link>
+    <link>https://blog.circleq.co/tags/</link>
     <description>Recent content in Tags on Cello World!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Feb 2018 17:13:32 +0700</lastBuildDate>
     
-	<atom:link href="https://alfieqashwa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.circleq.co/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Internet</title>
-      <link>https://alfieqashwa.github.io/tags/internet/</link>
+      <link>https://blog.circleq.co/tags/internet/</link>
       <pubDate>Sun, 18 Feb 2018 17:13:32 +0700</pubDate>
       
-      <guid>https://alfieqashwa.github.io/tags/internet/</guid>
+      <guid>https://blog.circleq.co/tags/internet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kafe</title>
-      <link>https://alfieqashwa.github.io/tags/kafe/</link>
+      <link>https://blog.circleq.co/tags/kafe/</link>
       <pubDate>Wed, 13 Jun 2018 17:35:15 +0700</pubDate>
       
-      <guid>https://alfieqashwa.github.io/tags/kafe/</guid>
+      <guid>https://blog.circleq.co/tags/kafe/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Opensource</title>
-      <link>https://alfieqashwa.github.io/tags/opensource/</link>
+      <link>https://blog.circleq.co/tags/opensource/</link>
       <pubDate>Sun, 18 Feb 2018 17:13:32 +0700</pubDate>
       
-      <guid>https://alfieqashwa.github.io/tags/opensource/</guid>
+      <guid>https://blog.circleq.co/tags/opensource/</guid>
       <description></description>
     </item>
     
     <item>
       <title>User Guide</title>
-      <link>https://alfieqashwa.github.io/tags/user-guide/</link>
+      <link>https://blog.circleq.co/tags/user-guide/</link>
       <pubDate>Wed, 13 Jun 2018 17:35:15 +0700</pubDate>
       
-      <guid>https://alfieqashwa.github.io/tags/user-guide/</guid>
+      <guid>https://blog.circleq.co/tags/user-guide/</guid>
       <description></description>
     </item>
     

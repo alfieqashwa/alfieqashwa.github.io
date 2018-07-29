@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kafe on Cello World!</title>
-    <link>https://alfieqashwa.github.io/categories/kafe/</link>
+    <link>https://blog.circleq.co/categories/kafe/</link>
     <description>Recent content in Kafe on Cello World!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 13 Jun 2018 17:35:15 +0700</lastBuildDate>
     
-	<atom:link href="https://alfieqashwa.github.io/categories/kafe/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.circleq.co/categories/kafe/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>User Guide Kafe 4</title>
-      <link>https://alfieqashwa.github.io/2018/06/user-guide-kafe-4/</link>
+      <link>https://blog.circleq.co/2018/06/user-guide-kafe-4/</link>
       <pubDate>Wed, 13 Jun 2018 17:35:15 +0700</pubDate>
       
-      <guid>https://alfieqashwa.github.io/2018/06/user-guide-kafe-4/</guid>
+      <guid>https://blog.circleq.co/2018/06/user-guide-kafe-4/</guid>
       <description>Point of Sale (PoS) Pada postingan sebelumnya kita membahas tata-cara yang berhubungan dengan back-office. Khusus postingan User Guide Kafe Part 4 akan kita bahas transaksi penjualan dengan menggunakan aplikasi module Point of Sale.
 Jika module Sales biasa digunakan untuk transaksi penjualan secara B2B, maka Point of Sale merupakan aplikasi yang khusus melayani transaksi penjualan dimana perusahaan Anda berhadapan secara langsung, physically, dengan customer. PoS biasa digunakan pada usaha retail seperti mini-market, distro pakaian, kafe &amp;amp; resto, bengkel, dan sebagainya.</description>
     </item>
     
     <item>
       <title>User Guide Kafe 3</title>
-      <link>https://alfieqashwa.github.io/2018/06/user-guide-kafe-3/</link>
+      <link>https://blog.circleq.co/2018/06/user-guide-kafe-3/</link>
       <pubDate>Mon, 11 Jun 2018 03:49:02 +0700</pubDate>
       
-      <guid>https://alfieqashwa.github.io/2018/06/user-guide-kafe-3/</guid>
+      <guid>https://blog.circleq.co/2018/06/user-guide-kafe-3/</guid>
       <description>Membuat BoM (Bill of Material) BoM biasa disebut Ingredients dalam bisnis kafe. Pada menu Nasi Goreng Kambing, berikut contoh komposisi bahan-bahannya:
    Ingredients / BoM Qty     Beras 450 g   Daging Kambing Muda 300 g    Video berikut adalah contoh cara membuat Bill of Material pada Menu.
   Melakukan Transaksi Penjualan Pada video di bawah, kasir melakukan transaksi penjualan menu Nasi Goreng Kambing sejumlah tiga porsi.</description>
@@ -34,10 +34,10 @@ Jika module Sales biasa digunakan untuk transaksi penjualan secara B2B, maka Poi
     
     <item>
       <title>User Guide Kafe 2</title>
-      <link>https://alfieqashwa.github.io/2018/06/user-guide-kafe-2/</link>
+      <link>https://blog.circleq.co/2018/06/user-guide-kafe-2/</link>
       <pubDate>Mon, 11 Jun 2018 00:49:26 +0700</pubDate>
       
-      <guid>https://alfieqashwa.github.io/2018/06/user-guide-kafe-2/</guid>
+      <guid>https://blog.circleq.co/2018/06/user-guide-kafe-2/</guid>
       <description>Workflow Berikut modul-modul aplikasi yang terinstall pada sistem kafe:
 Contoh Kasus Kafe ingin menjual menu makanan Nasi Goreng Kambing dimana untuk membuat menu tersebut memerlukan sedikitnya dua produk bahan, yaitu Beras dan Daging Kambing Muda dimana masing-masing di beli dari Agen Beras dan Agen Daging.
    Suplier Produk Bahan Harga/kg Qty Total     Agen Beras Beras 10 rb 10 kg 100 rb   Agen Daging Daging Kambing 60 rb 1 kg 60 rb    Membuat Data Suplier Video di bawah adalah cara membuat suplier berikut produk bahan-bahan yang akan di beli oleh Kafe &amp;amp; Resto.</description>
@@ -45,10 +45,10 @@ Contoh Kasus Kafe ingin menjual menu makanan Nasi Goreng Kambing dimana untuk me
     
     <item>
       <title>User Guide Kafe 1</title>
-      <link>https://alfieqashwa.github.io/2018/06/user-guide-kafe-1/</link>
+      <link>https://blog.circleq.co/2018/06/user-guide-kafe-1/</link>
       <pubDate>Sun, 10 Jun 2018 02:31:42 +0700</pubDate>
       
-      <guid>https://alfieqashwa.github.io/2018/06/user-guide-kafe-1/</guid>
+      <guid>https://blog.circleq.co/2018/06/user-guide-kafe-1/</guid>
       <description>Pendahuluan Posting ini diperuntukkan untuk para user Kafe &amp;amp; Resto yang telah di training, khususnya back-office dan kasir. Tujuannya sebagai dokumentasi untuk membantu para user atau pengguna memahami lebih baik tentang bagaimana cara mengoperasikan sistem aplikasi ini.
 Sebagai pendahuluan, sistem aplikasi ini berbasis teknologi ERP yang dapat di implementasikan baik secara online (cloud-base) maupun offline (LAN). Sistem aplikasi ini berbasis web sehingga dapat dijalankan selama terinstall aplikasi browser seperti Chrome atau Firefox pada PC, Notebook, iPad, Tablet, atau SmartPhone.</description>
     </item>
