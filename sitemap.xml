@@ -3,75 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blog.circleq.co/2018/06/user-guide-kafe-4/</loc>
-    <lastmod>2018-06-13T17:35:15+07:00</lastmod>
+    <loc>http://examplesite.com/login/</loc>
   </url>
   
   <url>
-    <loc>https://blog.circleq.co/2018/06/user-guide-kafe-3/</loc>
-    <lastmod>2018-06-11T03:49:02+07:00</lastmod>
+    <loc>http://examplesite.com/profile/</loc>
   </url>
   
   <url>
-    <loc>https://blog.circleq.co/2018/06/user-guide-kafe-2/</loc>
-    <lastmod>2018-06-11T00:49:26+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.circleq.co/2018/06/user-guide-kafe-1/</loc>
-    <lastmod>2018-06-10T02:31:42+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.circleq.co/archives/</loc>
+    <loc>http://examplesite.com/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.circleq.co/categories/</loc>
+    <loc>http://examplesite.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.circleq.co/</loc>
-    <lastmod>2018-06-13T17:35:15+07:00</lastmod>
+    <loc>http://examplesite.com/template/</loc>
+  </url>
+  
+  <url>
+    <loc>http://examplesite.com/components/</loc>
+  </url>
+  
+  <url>
+    <loc>http://examplesite.com/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.circleq.co/categories/kafe/</loc>
-    <lastmod>2018-06-13T17:35:15+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.circleq.co/tags/kafe/</loc>
-    <lastmod>2018-06-13T17:35:15+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.circleq.co/post/</loc>
-    <lastmod>2018-06-13T17:35:15+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.circleq.co/tags/</loc>
-    <lastmod>2018-06-13T17:35:15+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.circleq.co/categories/user-guide/</loc>
-    <lastmod>2018-06-13T17:35:15+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.circleq.co/tags/user-guide/</loc>
-    <lastmod>2018-06-13T17:35:15+07:00</lastmod>
-    <priority>0</priority>
+    <loc>http://examplesite.com/landing/</loc>
   </url>
   
 </urlset>
