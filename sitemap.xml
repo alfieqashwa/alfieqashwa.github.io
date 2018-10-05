@@ -3,10 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://alfieqashwa.me/login/</loc>
-  </url>
-  
-  <url>
     <loc>https://alfieqashwa.me/profile/</loc>
   </url>
   
@@ -25,16 +21,8 @@
   </url>
   
   <url>
-    <loc>https://alfieqashwa.me/components/</loc>
-  </url>
-  
-  <url>
     <loc>https://alfieqashwa.me/tags/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://alfieqashwa.me/landing/</loc>
   </url>
   
 </urlset>
