@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alfie Qashwa</title>
-    <link>http://examplesite.com/</link>
+    <link>https://alfieqashwa.me/</link>
     <description>Recent content on Alfie Qashwa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://examplesite.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://alfieqashwa.me/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://examplesite.com/login/</link>
+      <link>https://alfieqashwa.me/login/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://examplesite.com/login/</guid>
+      <guid>https://alfieqashwa.me/login/</guid>
       <description>         Get Started   Create Account    Need Help?     </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://examplesite.com/profile/</link>
+      <link>https://alfieqashwa.me/profile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://examplesite.com/profile/</guid>
+      <guid>https://alfieqashwa.me/profile/</guid>
       <description>Don&#39;t Click!      About me Musik, Programming, dan Sejarah Agama — merupakan tiga bidang ilmu yang paling saya minati. My Portfolio                            </description>
     </item>
     
     <item>
       <title>Cello Loves Golang &amp; React!</title>
-      <link>http://examplesite.com/template/</link>
+      <link>https://alfieqashwa.me/template/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://examplesite.com/template/</guid>
+      <guid>https://alfieqashwa.me/template/</guid>
       <description>Here comes the body of the page&amp;hellip;
 // Look, a code block! func main() { fmt.Println(`Cello Loves Golang &amp;amp; React!`) }  </description>
     </item>
     
     <item>
       <title>Components</title>
-      <link>http://examplesite.com/components/</link>
+      <link>https://alfieqashwa.me/components/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://examplesite.com/components/</guid>
+      <guid>https://alfieqashwa.me/components/</guid>
       <description>Now UI Kit. A beautiful Bootstrap 4 UI kit. Yours free.  Designed by . Coded by . --          Basic Elements Buttons Pick your style
 Default Round  With Icon    Simple   Pick your size
 Small Regular Large   Pick your color
@@ -52,10 +52,10 @@ Default Primary Info Success Warning Danger Neutral   Links Default Primary Info
     
     <item>
       <title>Write the best title for your page.</title>
-      <link>http://examplesite.com/landing/</link>
+      <link>https://alfieqashwa.me/landing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://examplesite.com/landing/</guid>
+      <guid>https://alfieqashwa.me/landing/</guid>
       <description>Who are we? According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDC lead scentist, puts the potentially record low maximum sea ice extent tihs year down to low ice extent in the Pacific and a late drop in ice extent in the Barents Sea.    &#34;Over the span of the satellite record, Arctic sea ice has been declining significantly, while sea ice in the Antarctichas increased very slightly&#34;</description>
     </item>
     
