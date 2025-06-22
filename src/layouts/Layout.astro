@@ -1,22 +1,48 @@
+---
+import "../styles/global.css";
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title><slot name="title" /></title>
+  </head>
+<body>
+<div class="relative w-full h-screen overflow-hidden bg-[color:var(--color-paper)]">
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+  <!-- Noise layer (tiled) -->
+  <div
+    class="absolute inset-0
+           bg-[url('/noise.webp')]
+           bg-repeat
+           bg-size-[var(--noise-tile-size)_var(--noise-tile-size)]
+           mix-blend-overlay
+           opacity-[0.5]"
+  ></div>
+
+  <!-- Gradient + inset shadow layer -->
+  <div
+    class="absolute inset-0
+           shadow-[inset_0_30px_60px_30px_hsla(0,0%,0%,0.95)]
+           bg-[linear-gradient(to_bottom_right,hsla(0,0%,0%,0)_30%,hsla(0,0%,0%,0.8))]
+           mix-blend-overlay
+           bg-cover"
+  ></div>
+
+  <!-- Dot grid layer -->
+  <div
+    class="absolute inset-0
+           bg-[radial-gradient(circle_at_center,var(--ring-color)_1px,transparent_1px)]
+           bg-blend-hard-light
+           opacity-[0.15]
+           bg-size-[var(--dot-size)_var(--dot-size)]"
+  ></div>
+
+  <div class="relative z-10 p-8"><slot /></div>
+</div>
+</body>
+</html>

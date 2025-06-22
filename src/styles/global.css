@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@theme {
+  --color-paper: hsl(40, 35%, 76%);
+  --ring-color: rgba(0, 0, 0, 0.15); /* slightly darker */
+  --dot-size: 5px;
+  --noise-tile-size: 140px;
+}
+
+/* Full-height and no-default padding */
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
