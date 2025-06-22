@@ -1,48 +1,59 @@
 ---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 import "../styles/global.css";
+const { pageTitle } = Astro.props;
 ---
 
-<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title><slot name="title" /></title>
+    <title>{pageTitle}</title>
   </head>
-<body>
-<div class="relative w-full h-screen overflow-hidden bg-[color:var(--color-paper)]">
-
-  <!-- Noise layer (tiled) -->
-  <div
-    class="absolute inset-0
+  <body>
+    <div
+      class="relative w-full h-screen overflow-hidden bg-[color:var(--color-paper)]"
+    >
+      <!-- Noise layer (tiled) -->
+      <div
+        class="absolute inset-0
            bg-[url('/noise.webp')]
            bg-repeat
            bg-size-[var(--noise-tile-size)_var(--noise-tile-size)]
            mix-blend-overlay
            opacity-[0.5]"
-  ></div>
+      >
+      </div>
 
-  <!-- Gradient + inset shadow layer -->
-  <div
-    class="absolute inset-0
+      <!-- Gradient + inset shadow layer -->
+      <div
+        class="absolute inset-0
            shadow-[inset_0_30px_60px_30px_hsla(0,0%,0%,0.95)]
            bg-[linear-gradient(to_bottom_right,hsla(0,0%,0%,0)_30%,hsla(0,0%,0%,0.8))]
            mix-blend-overlay
            bg-cover"
-  ></div>
+      >
+      </div>
 
-  <!-- Dot grid layer -->
-  <div
-    class="absolute inset-0
+      <!-- Dot grid layer -->
+      <div
+        class="absolute inset-0
            bg-[radial-gradient(circle_at_center,var(--ring-color)_1px,transparent_1px)]
            bg-blend-hard-light
            opacity-[0.15]
            bg-size-[var(--dot-size)_var(--dot-size)]"
-  ></div>
+      >
+      </div>
 
-  <div class="relative z-10 p-8"><slot /></div>
-</div>
-</body>
+      <div class="relative z-10 p-8">
+        <Header />
+        <h1>{pageTitle}</h1>
+        <slot />
+        <Footer />
+      </div>
+    </div>
+  </body>
 </html>
