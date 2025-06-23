@@ -13,3 +13,11 @@ body {
   width: 100%;
   height: 100%;
 }
+
+@utility thom {
+  @apply z-50 outline-1 outline-rose-200;
+}
+
+@utility kurt {
+  @apply z-50 outline-1 outline-sky-200;
+}
