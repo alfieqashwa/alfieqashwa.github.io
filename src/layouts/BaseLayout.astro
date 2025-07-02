@@ -12,7 +12,7 @@ const { pageTitle } = Astro.props;
     <link rel="icon" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
+    <title>{pageTitle} | AQ</title>
   </head>
   <body>
     <div
@@ -49,10 +49,13 @@ const { pageTitle } = Astro.props;
       >
       </div>
 
-      <div class="relative z-10 p-4 text-lg">
+      <div class="relative z-10 p-8 text-lg">
         <Header />
-        <h1>{pageTitle}</h1>
-        <slot />
+        <main
+          class="bg-gradient-to-br from-amber-300/10 to-amber-200/10 min-h-[calc(100vh_-_9rem)] my-4 p-8 rounded-lg shadow-lg"
+        >
+          <slot />
+        </main>
         <Footer />
       </div>
     </div>
