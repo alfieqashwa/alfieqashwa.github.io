@@ -6,9 +6,12 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "encrypt": "tsx ./src/scripts/encrypt-paragraphs.ts"
   },
   "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/mdx": "^4.3.0",
     "@astrojs/react": "^4.3.0",
     "@astrojs/rss": "^4.0.12",
     "@fontsource-variable/roboto": "^5.2.6",
@@ -21,13 +24,24 @@
     "astro": "^5.10.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "crypto-js": "^4.2.0",
     "lucide-react": "^0.522.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-markdown": "^10.1.0",
+    "rehype-stringify": "^10.0.1",
+    "remark": "^15.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
     "tailwind-merge": "^3.3.1",
-    "tailwindcss": "^4.1.10"
+    "tailwindcss": "^4.1.10",
+    "unified": "^11.0.5"
   },
   "devDependencies": {
-    "tw-animate-css": "^1.3.4"
+    "dotenv": "^17.0.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
+    "tw-animate-css": "^1.3.4",
+    "typescript": "^5.8.3"
   }
 }

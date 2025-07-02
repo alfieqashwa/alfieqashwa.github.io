@@ -3,6 +3,8 @@ import { defineConfig } from "astro/config";
 
 import react from "@astrojs/react";
 
+import mdx from "@astrojs/mdx";
+
 export default defineConfig({
   site: "https://alfieqashwa.github.io",
   base: "/",
@@ -12,5 +14,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  integrations: [react()],
+  integrations: [react(), mdx()],
 });

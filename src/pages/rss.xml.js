@@ -8,7 +8,7 @@ export async function GET(ctx) {
     title: "Astro Learner | Blog",
     description: "My journey learning Astro",
     site: ctx.site,
-    items: await posts.map((post) => ({
+    items: posts.map((post) => ({
       title: post.data.title,
       pubDate: post.data.pubDate,
       description: post.data.description,

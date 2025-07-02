@@ -22,3 +22,14 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+
+# Don't push raw .md
+g
+/src/blog/*.md
+
+# But keep .mdx (stub)
+!*.mdx
+
+# Keep encrypted files (they are meant to be public)
+!public/encrypted/*.md.enc
