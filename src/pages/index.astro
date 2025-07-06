@@ -4,7 +4,7 @@ const pageTitle = "Home";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <section class="mx-auto grid min-w-xs max-w-sm grid-cols-1 [grid-template-areas:'a''b''e''h''i''c''k''d''g''f''j'] sm:max-w-2xl sm:grid-cols-2 sm:[grid-template-areas:'a_a''b_d''e_e''j_g''h_i''h_c''k_c''f_f'] lg:max-w-5xl lg:grid-cols-3 lg:[grid-template-areas:'a_a_b''d_e_e''h_f_f''h_i_g''k_c_j'] xl:max-w-7xl xl:grid-cols-4 xl:[grid-template-areas:'a_a_b_c''d_e_e_c''h_f_f_g''h_i_j_k']">
+  <section class="mx-auto grid min-w-xs max-w-sm grid-cols-1 gap-2 [grid-template-areas:'a''b''e''h''i''c''k''d''g''f''j'] sm:max-w-2xl sm:grid-cols-2 sm:[grid-template-areas:'a_a''b_d''e_e''j_g''h_i''h_c''k_c''f_f'] lg:max-w-5xl lg:grid-cols-3 lg:[grid-template-areas:'a_a_b''d_e_e''h_f_f''h_i_g''k_c_j'] xl:max-w-7xl xl:grid-cols-4 xl:[grid-template-areas:'a_a_b_c''d_e_e_c''h_f_f_g''h_i_j_k']">
     
     <!-- About Card -->
     <div class="aspect-[3/4] p-2 [grid-area:a] sm:aspect-[2/1] xl:aspect-[2/1]">
@@ -27,15 +27,15 @@ const pageTitle = "Home";
       </div>
     </div>
     
-    <!-- Blog Card -->
+    <!-- Projects Card -->
     <div class="aspect-square p-2 [grid-area:b]">
       <div class="bg-muted size-full border relative">
         <div class="size-full bg-gradient-to-br from-primary/10 to-primary/5">
           <div class="p-6 h-full flex flex-col justify-center items-center text-center">
-            <h3 class="text-lg font-semibold mb-2">Blog</h3>
-            <p class="text-muted-foreground text-sm mb-4">Read my latest thoughts and tutorials</p>
-            <a href="/blog" class="inline-flex items-center text-sm border border-border bg-background hover:bg-accent px-3 py-2 rounded transition-colors">
-              Explore Posts
+            <h3 class="text-lg font-semibold mb-2">Projects</h3>
+            <p class="text-muted-foreground text-sm mb-4">Explore my recent work and side projects</p>
+            <a href="/projects" class="inline-flex items-center text-sm border border-border bg-background hover:bg-accent px-3 py-2 rounded transition-colors">
+              View Projects
               <svg width="16" height="16" class="ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M13 5h6v6m0-6L5 19"/>
               </svg>
@@ -141,9 +141,10 @@ const pageTitle = "Home";
     <div class="aspect-square p-2 [grid-area:i]">
       <div class="bg-muted size-full border">
         <div class="p-4 h-full">
-          <h3 class="text-lg font-semibold mb-2">Current Project</h3>
-          <p class="text-muted-foreground text-sm mb-2">Working on:</p>
-          <p class="text-sm">Digital Garden redesign</p>
+          <h3 class="text-lg font-semibold mb-2">Featured Project</h3>
+          <p class="text-muted-foreground text-sm mb-2">Currently showcasing:</p>
+          <p class="text-sm font-medium mb-1">QozyCue</p>
+          <p class="text-xs text-muted-foreground">Billiard management system</p>
         </div>
       </div>
     </div>
@@ -155,6 +156,7 @@ const pageTitle = "Home";
           <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
           <div class="space-y-2 text-sm">
             <a href="/about" class="block text-muted-foreground hover:text-foreground transition-colors">About</a>
+            <a href="/projects" class="block text-muted-foreground hover:text-foreground transition-colors">Projects</a>
             <a href="/blog" class="block text-muted-foreground hover:text-foreground transition-colors">Blog</a>
             <a href="/tags" class="block text-muted-foreground hover:text-foreground transition-colors">Tags</a>
           </div>
