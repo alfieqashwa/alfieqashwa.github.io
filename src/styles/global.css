@@ -9,21 +9,22 @@
 @import "@fontsource/inter/700.css";
 
 :root {
-  /* Colors inspired by enscribe.dev dark theme */
-  --background: #0a0a0a;
-  --foreground: #e4e4e7;
-  --muted: #1a1a1a;
-  --muted-foreground: #888888;
-  --border: #2a2a2a;
-  --primary: #e9d3b6;
-  --primary-foreground: #0a0a0a;
-  --accent: #1a1a1a;
-  --accent-foreground: #e4e4e7;
-  --ring: #e9d3b6;
-  --card: #111111;
-  --card-foreground: #e4e4e7;
-  --destructive: #ef4444;
-  --destructive-foreground: #fefefe;
+  /* Colors matching enscribe.dev exactly */
+  --background: oklch(17.22% .0041 75);
+  --foreground: oklch(94.7% .0414 75);
+  --primary: oklch(87.75% .0458 75);
+  --primary-foreground: oklch(20.9% .006 75);
+  --secondary: oklch(20.9% .006 75);
+  --secondary-foreground: oklch(68.14% .0243 75);
+  --muted: oklch(20.9% .006 75);
+  --muted-foreground: oklch(68.14% .0243 75);
+  --accent: oklch(20.9% .006 75);
+  --accent-foreground: oklch(99.27% .0364 75);
+  --destructive: oklch(70.4% .191 22);
+  --border: oklch(30.74% .0087 75);
+  --ring: oklch(48.56% .0171 75);
+  --card: oklch(20.9% .006 75);
+  --card-foreground: oklch(94.7% .0414 75);
   --radius: 0.5rem;
 }
 
