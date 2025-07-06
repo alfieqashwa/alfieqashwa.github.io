@@ -2,62 +2,39 @@
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import "../styles/global.css";
-import "@fontsource/kalam";
 const { pageTitle } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="en" class="bg-background text-foreground">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no" />
+    <meta name="theme-color" content="#e9d3b6" />
     <title>{pageTitle} | AQ</title>
   </head>
   <body>
-    <div
-      class="relative w-full h-screen overflow-hidden bg-[color:var(--color-paper)]"
-    >
-      <!-- Noise layer (tiled) -->
-      <div
-        class="absolute inset-0
-           bg-[url('/noise.webp')]
-           bg-repeat
-           bg-size-[var(--noise-tile-size)_var(--noise-tile-size)]
-           mix-blend-overlay
-           opacity-[0.7]"
-      >
-      </div>
-
-      <!-- Gradient + inset shadow layer -->
-      <div
-        class="absolute inset-0
-           shadow-[inset_0_30px_60px_30px_hsla(0,0%,0%,0.98)]
-           bg-[linear-gradient(to_bottom_right,hsla(0,0%,0%,0.2)_30%,hsla(0,0%,0%,0.9))]
-           mix-blend-overlay
-           bg-cover"
-      >
-      </div>
-
-      <!-- Dot grid layer -->
-      <div
-        class="absolute inset-0
-           bg-[radial-gradient(circle_at_center,var(--ring-color)_1px,transparent_1px)]
-           bg-blend-hard-light
-           opacity-[0.25]
-           bg-size-[var(--dot-size)_var(--dot-size)]"
-      >
-      </div>
-
-      <div class="relative z-10 p-8 text-lg">
+    <div class="flex h-fit min-h-screen flex-col gap-y-6 font-mono">
+      <!-- Header -->
+      <div class="bg-background/50 sticky top-0 z-50 divide-y backdrop-blur-sm">
         <Header />
-        <main
-          class="bg-gradient-to-br from-amber-300/10 to-amber-200/10 min-h-[calc(100vh_-_9rem)] my-4 p-8 rounded-lg shadow-lg"
-        >
-          <slot />
-        </main>
-        <Footer />
       </div>
+      
+      <!-- Main Content -->
+      <main class="grow">
+        <div class="mx-auto flex grow flex-col gap-y-6 px-2">
+          <slot />
+        </div>
+      </main>
+      
+      <!-- Footer -->
+      <Footer />
     </div>
   </body>
 </html>

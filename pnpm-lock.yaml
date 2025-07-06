@@ -23,6 +23,12 @@ importers:
       '@fontsource-variable/roboto':
         specifier: ^5.2.6
         version: 5.2.6
+      '@fontsource/inter':
+        specifier: ^5.2.6
+        version: 5.2.6
+      '@fontsource/jetbrains-mono':
+        specifier: ^5.2.6
+        version: 5.2.6
       '@fontsource/kalam':
         specifier: ^5.2.6
         version: 5.2.6
@@ -442,6 +448,12 @@ packages:
 
   '@fontsource-variable/roboto@5.2.6':
     resolution: {integrity: sha512-bKgCwHdRcUcHPmypU5oih+OnTQUnZ7XBoztJ0W2X+m7WRYITTWnnnQBDPAKbOwiemU/yJHGg+lD03M60BGuuGg==}
+
+  '@fontsource/inter@5.2.6':
+    resolution: {integrity: sha512-CZs9S1CrjD0jPwsNy9W6j0BhsmRSQrgwlTNkgQXTsAeDRM42LBRLo3eo9gCzfH4GvV7zpyf78Ozfl773826csw==}
+
+  '@fontsource/jetbrains-mono@5.2.6':
+    resolution: {integrity: sha512-nz//dBr99hXZmHp10wgNI00qThWImkzRR5PQjvRM+rpmuHO5rYBJCqPPWufidCvmkkryXx/GOP/lgqsM3R3Org==}
 
   '@fontsource/kalam@5.2.6':
     resolution: {integrity: sha512-kwf4N8hraWNl/0xo71iXdz25ecifE+7bUaGha1WjVvpikIyPqHuRyePOyoMTYz8/u60ed4vv+tsYp4HO6DB4zA==}
@@ -3250,6 +3262,10 @@ snapshots:
   '@floating-ui/utils@0.2.9': {}
 
   '@fontsource-variable/roboto@5.2.6': {}
+
+  '@fontsource/inter@5.2.6': {}
+
+  '@fontsource/jetbrains-mono@5.2.6': {}
 
   '@fontsource/kalam@5.2.6': {}
 

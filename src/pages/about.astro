@@ -1,75 +1,124 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const pageTitle: string = 'About Me';
-const happy = true;
-const finished = true;
-const goal = 3;
+const pageTitle = 'About';
 
 const identity = {
     firstName: 'Alfie',
+    lastName: 'Qashwa',
     country: "Indonesia",
-    occupation: 'Technical Writer',
-    hobbies: ['photography', 'gaming', 'reading'],
+    occupation: 'Software Engineer',
+    hobbies: ['coding', 'reading', 'learning new technologies'],
 }
 
-const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Astro', 'Writing Docs']
+const skills = [
+  'JavaScript/TypeScript',
+  'React/Next.js',
+  'Node.js',
+  'Astro',
+  'Tailwind CSS',
+  'Git/GitHub',
+  'Technical Writing'
+]
 
-const skillColor = "navy";
-const fontWeight = "bold";
-const textCase = "uppercase";
+const experience = [
+  {
+    title: 'Software Engineer',
+    period: '2023 - Present',
+    description: 'Building web applications and contributing to open source projects.'
+  },
+  {
+    title: 'Learning Journey',
+    period: '2022 - Present',
+    description: 'Continuously exploring new technologies and sharing knowledge through this digital garden.'
+  }
+]
 ---
 
-<style define:vars={{ skillColor, fontWeight, textCase }}>
-  h1 {
-    color: purple;
-    font-size: 4rem;
-  }
-  .skill {
-    color: var(--skillColor);
-    font-weight: var(--fontWeight);
-    text-transform: var(--textCase);
-  }
-</style>
-
 <BaseLayout pageTitle={pageTitle}>
-  <h2>... and my new Astro site!</h2>
-
-  <p>
-    I am working through Astro's introductory tutorial. This is the second page
-    on my website, and it's the first one I built myself!
-  </p>
-
-  <p>
-    This site will update as I complete more of the tutorial, so keep checking
-    back and see how my journey is going!
-  </p>
-
-  {happy && <p>I am happy to be learning Astro!</p>}
-
-  {finished && <p>I finished this tutorial!</p>}
-
-  {
-    goal === 3 ? (
-      <p>My goal is to finish in 3 days.</p>
-    ) : (
-      <p>My goal is not 3 days.</p>
-    )
-  }
-
-  <p>Here are a few facts about me:</p>
-  <ul>
-    <li>My name is {identity.firstName}.</li>
-    <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
-    {
-      identity.hobbies.length >= 2 && (
-        <li>
-          Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}
-        </li>
-      )
-    }
-  </ul>
-  <p>My skills are:</p><p></p><ul>
-    {skills.map((skill) => <li class="skill">{skill}</li>)}
-  </ul>
+  <div class="mx-auto max-w-4xl px-4">
+    <!-- Header -->
+    <div class="mb-12">
+      <h1 class="text-4xl font-bold mb-4">About Me</h1>
+      <p class="text-xl text-muted-foreground leading-relaxed">
+        Hi! I'm {identity.firstName} {identity.lastName}, a passionate software engineer from {identity.country} 
+        who loves building web applications and sharing knowledge.
+      </p>
+    </div>
+    
+    <!-- Introduction -->
+    <div class="grid md:grid-cols-2 gap-8 mb-12">
+      <div class="bg-muted border rounded-lg p-6">
+        <h2 class="text-xl font-semibold mb-4">What I Do</h2>
+        <p class="text-muted-foreground mb-4">
+          I work as a {identity.occupation}, focusing on creating efficient and user-friendly web applications. 
+          I'm passionate about clean code, modern development practices, and continuous learning.
+        </p>
+        <p class="text-muted-foreground">
+          When I'm not coding, you can find me {identity.hobbies.slice(0, -1).join(', ')} and {identity.hobbies[identity.hobbies.length - 1]}.
+        </p>
+      </div>
+      
+      <div class="bg-muted border rounded-lg p-6">
+        <h2 class="text-xl font-semibold mb-4">This Digital Garden</h2>
+        <p class="text-muted-foreground mb-4">
+          This website serves as my digital garden where I document my learning journey, 
+          share tutorials, and experiment with new technologies.
+        </p>
+        <p class="text-muted-foreground">
+          Built with Astro and styled with Tailwind CSS, it's designed to be fast, accessible, 
+          and easy to navigate.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Skills -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-semibold mb-6">Skills & Technologies</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+        {skills.map((skill) => (
+          <div class="bg-muted border rounded-lg p-3 text-center">
+            <span class="text-sm font-medium">{skill}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+    
+    <!-- Experience -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-semibold mb-6">Experience</h2>
+      <div class="space-y-6">
+        {experience.map((exp) => (
+          <div class="bg-muted border rounded-lg p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-lg font-semibold">{exp.title}</h3>
+              <span class="text-sm text-muted-foreground">{exp.period}</span>
+            </div>
+            <p class="text-muted-foreground">{exp.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+    
+    <!-- Contact -->
+    <div class="bg-muted border rounded-lg p-6 text-center">
+      <h2 class="text-xl font-semibold mb-4">Let's Connect</h2>
+      <p class="text-muted-foreground mb-6">
+        I'm always interested in connecting with fellow developers and tech enthusiasts. 
+        Feel free to reach out!
+      </p>
+      <div class="flex justify-center gap-4">
+        <a 
+          href="https://github.com/alfieqashwa" 
+          target="_blank" 
+          class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
 </BaseLayout>

@@ -2,11 +2,15 @@
 import Navigation from "./Navigation.astro";
 ---
 
-<header
-  class="flex justify-between items-center font-semibold text-lg tracking-wider"
->
-  <h2>Alfie Qashwa Digital Garden</h2>
-  <nav class="hidden md:flex md:justify-end gap-8">
-    <Navigation />
-  </nav>
+<header>
+  <div class="mx-auto flex max-w-3xl items-center justify-between gap-4 px-4 py-3">
+    <a href="/" class="transition-colors duration-300 ease-in-out flex shrink-0">
+      <span class="text-lg font-semibold tracking-tight">AQ</span>
+    </a>
+    <div class="flex items-center gap-4">
+      <nav class="flex items-center gap-6 text-sm">
+        <Navigation />
+      </nav>
+    </div>
+  </div>
 </header>
