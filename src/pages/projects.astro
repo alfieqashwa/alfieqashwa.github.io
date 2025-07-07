@@ -1,7 +1,6 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-
-const pageTitle = "Projects";
+import PageHead from "@/components/PageHead.astro";
+import Layout from "@/layouts/Layout.astro";
 
 const projects = [
   {
@@ -52,7 +51,9 @@ const projects = [
 ];
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<Layout>
+
+  <PageHead slot="head" title="Projects" />
   <div class="mx-auto max-w-6xl px-4">
     <!-- Header -->
     <div class="mb-8 sm:mb-12">
@@ -255,4 +256,4 @@ const projects = [
       </a>
     </div>
   </div>
-</BaseLayout>
+</Layout>

@@ -1,58 +1,26 @@
 ---
-import { getCollection } from "astro:content";
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import PageHead from '@/components/PageHead.astro'
+import Layout from '@/layouts/Layout.astro'
+import { getSortedTags } from '@/lib/data-utils'
+import { getCollection } from 'astro:content'
 
 const allPosts = await getCollection("blog");
-const tags = [...new Set(allPosts.map((post: any) => post.data.tags).flat())].sort();
-
-// Calculate post count for each tag
-const tagCounts = tags.map(tag => ({
-  name: tag,
-  count: allPosts.filter(post => post.data.tags?.includes(tag)).length
-}));
-
-const pageTitle = "Tags";
+const sortedTags = await getSortedTags()
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<Layout class="max-w-3xl">
+  <PageHead slot="head" title="Tags" />
+  <Breadcrumbs items={[{ label: 'Tags', icon: 'lucide:tags' }]} />
+
   <div class="mx-auto max-w-4xl px-4">
     <!-- Header -->
     <div class="mb-12">
       <h1 class="text-4xl font-bold mb-4">Tags</h1>
       <p class="text-xl text-muted-foreground leading-relaxed">
-        Explore posts organized by topics and technologies. Click on any tag to see related articles.
+        Explore posts organized by topics and technologies. Click on any tag to
+        see related articles.
       </p>
-    </div>
-
-    <!-- Tags Grid -->
-    <div class="mb-8">
-      <h2 class="text-2xl font-semibold mb-6">Browse by Topic</h2>
-      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {
-          tagCounts.map((tag) => (
-            <a 
-              href={`/tags/${tag.name}`} 
-              class="group bg-muted border rounded-lg p-6 hover:bg-accent transition-colors"
-            >
-              <div class="flex items-center justify-between">
-                <div>
-                  <h3 class="text-lg font-semibold group-hover:text-primary transition-colors capitalize">
-                    {tag.name}
-                  </h3>
-                  <p class="text-sm text-muted-foreground mt-1">
-                    {tag.count} {tag.count === 1 ? 'post' : 'posts'}
-                  </p>
-                </div>
-                <div class="text-muted-foreground group-hover:text-primary transition-colors">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M13 5h6v6m0-6L5 19"/>
-                  </svg>
-                </div>
-              </div>
-            </a>
-          ))
-        }
-      </div>
     </div>
 
     <!-- Tag Cloud Alternative -->
@@ -60,16 +28,16 @@ const pageTitle = "Tags";
       <h2 class="text-2xl font-semibold mb-6">Tag Cloud</h2>
       <div class="flex flex-wrap gap-3">
         {
-          tagCounts.map((tag) => (
-            <a 
-              href={`/tags/${tag.name}`} 
+        sortedTags.map(({tag, count}) => (
+            <a
+              href={`/tags/${tag}`}
               class="inline-flex items-center gap-2 px-4 py-2 bg-muted border rounded-full hover:bg-accent hover:border-primary/50 transition-all group"
             >
               <span class="text-sm font-medium group-hover:text-primary transition-colors capitalize">
-                {tag.name}
+                {tag}
               </span>
               <span class="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full">
-                {tag.count}
+                {count}
               </span>
             </a>
           ))
@@ -81,7 +49,7 @@ const pageTitle = "Tags";
     <div class="bg-muted border rounded-lg p-6 text-center">
       <div class="grid grid-cols-2 gap-6">
         <div>
-          <p class="text-2xl font-bold text-primary">{tagCounts.length}</p>
+          <p class="text-2xl font-bold text-primary">{sortedTags.length}</p>
           <p class="text-sm text-muted-foreground">Total Tags</p>
         </div>
         <div>
@@ -91,4 +59,4 @@ const pageTitle = "Tags";
       </div>
     </div>
   </div>
-</BaseLayout>
+</Layout>
