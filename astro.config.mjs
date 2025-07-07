@@ -65,10 +65,8 @@ export default defineConfig({
         uiFontFamily: "var(--font-sans)",
       },
     }),
+    react(),
     mdx(),
-    react({
-      include: ["**/react/*"],
-    }),
     sitemap(),
     icon(),
   ],

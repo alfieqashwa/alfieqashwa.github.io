@@ -1,7 +1,8 @@
 ---
 import Decrypt from "../components/react/Decrypt";
+const { encrypted } = Astro.props;
 ---
 
-<div class="my-6">
-<Decrypt client:only="react" encrypted={`/encrypted/secret-1.txt.enc`} />
+<div class="my-6 text-center">
+<Decrypt client:only="react" encrypted={encrypted} />
 </div>

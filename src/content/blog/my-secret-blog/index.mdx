@@ -8,10 +8,16 @@ authors: ["alfieqashwa"]
 encrypted: true
 ---
 
-import DecryptPost from "../../../components/DecryptPost.astro";
+import DecryptPost from "@/components/DecryptPost.astro";
+
+## Secret Blog
 
 After a successful first week learning Astro, I decided to try some more. I wrote and imported a small component from memory!
 
-This is a dummy post written in the year 2024! Here is a long blog post with heavily nested headers, which can be used to test the table of contents:
+This is a dummy post written in the year 2025! Here is a long blog post with heavily nested headers, which can be used to test the table of contents:
 
-<DecryptPost />
+### Secret Key
+
+<DecryptPost encrypted={`/encrypted/secret-1.txt.enc`} />
+
+Hint: radiohead
