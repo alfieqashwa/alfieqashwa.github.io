@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import CryptoJS from "crypto-js";
 import ReactMarkdown from "react-markdown";

@@ -66,7 +66,9 @@ export default defineConfig({
       },
     }),
     mdx(),
-    react(),
+    react({
+      include: ["**/react/*"],
+    }),
     sitemap(),
     icon(),
   ],
