@@ -1,5 +1,6 @@
 ---
 import PageHead from "@/components/PageHead.astro";
+import GithubCalendar from "@/components/react/GithubCalendar";
 import Layout from "@/layouts/Layout.astro";
 
 const skills = [
@@ -150,13 +151,16 @@ const skills = [
 
     <!-- About Me Extended -->
     <div class="aspect-square p-2 [grid-area:f] sm:aspect-[2/1]">
-      <div class="bg-muted size-full border">
+      <div class="bg-muted relative size-full border">
         <div class="p-4 h-full">
-          <h3 class="text-lg font-semibold mb-4">About This Site</h3>
-          <p class="text-muted-foreground text-sm">
-            This is my digital garden where I share thoughts, tutorials, and
-            experiments. Built with Astro and deployed with GitHub Actions.
-          </p>
+            <p
+              class="text-foreground/80 bg-background absolute top-[37.5%] left-4 -translate-y-1/2 border p-2 text-xs text-pretty"
+            >
+              Check out my<br /> GitHub calendar!
+            </p>
+        <div class="flex size-full items-center justify-center p-8">
+          <GithubCalendar username="alfieqashwa" client:load />
+        </div>
         </div>
       </div>
     </div>
