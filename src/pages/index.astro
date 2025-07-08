@@ -1,6 +1,7 @@
 ---
 import PageHead from "@/components/PageHead.astro";
 import GithubCalendar from "@/components/react/GithubCalendar";
+import WakatimeGraph from "@/components/react/WakatimeGraph";
 import Layout from "@/layouts/Layout.astro";
 
 const skills = [
@@ -205,7 +206,12 @@ const skills = [
       </div>
     </div>
 
-    <!-- Quick Links -->
+    <!-- Quick Links // TODO: -->
+<!-- <div class="aspect-square p-2 [grid-area:j]"> -->
+<!--       <div class="bg-muted size-full border"> -->
+<!--         <WakatimeGraph omitLanguages={['Markdown', 'JSON']} client:load /> -->
+<!--       </div> -->
+<!--     </div> -->
     <div class="aspect-square p-2 [grid-area:j]">
       <div class="bg-muted size-full border">
         <div class="p-4 h-full">
