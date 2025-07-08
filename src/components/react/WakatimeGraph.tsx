@@ -31,7 +31,7 @@ const CHART_COLORS = [
   "hsl(var(--chart-7))",
 ] as const;
 const WAKATIME_API_URL =
-  "https://wakatime.com/share/@alfieqashwa/70e41f95-f6a3-48ae-9319-19bc49e2a74e.json"; // TODO: waiting for the next 7 days.
+  "https://wakatime.com/share/@alfieqashwa/70e41f95-f6a3-48ae-9319-19bc49e2a74e.json";
 const MAX_LANGUAGES = 7;
 const ICON_SIZE = 20;
 const CIRCLE_RADIUS = 16;
