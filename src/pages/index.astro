@@ -1,8 +1,11 @@
 ---
+import Link from "@/components/Link.astro";
 import PageHead from "@/components/PageHead.astro";
 import GithubCalendar from "@/components/react/GithubCalendar";
 import WakatimeGraph from "@/components/react/WakatimeGraph";
+import { SOCIAL_LINKS } from "@/consts";
 import Layout from "@/layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
 
 const skills = [
   "JavaScript",
@@ -191,17 +194,35 @@ const skills = [
     </div>
 
     <!-- Current Project -->
-    <div class="aspect-square p-2 [grid-area:i]">
+<div class="aspect-square p-2 [grid-area:i]">
       <div class="bg-muted size-full border">
-        <div class="p-4 h-full">
-          <h3 class="text-lg font-semibold mb-2">Featured Project</h3>
-          <p class="text-muted-foreground text-sm mb-2">
-            Currently showcasing:
-          </p>
-          <p class="text-sm font-medium mb-1">QozyCue</p>
-          <p class="text-xs text-muted-foreground">
-            Billiard management system
-          </p>
+        <div
+          class="group/github relative flex size-full items-center justify-center bg-[url('/static/github-background.png')] bg-cover bg-center bg-no-repeat"
+        >
+          <div
+            class="size-full bg-[url('/static/github-foreground.png')] bg-cover bg-center bg-no-repeat transition-opacity duration-200 sm:opacity-0 sm:group-hover/github:opacity-100"
+            aria-hidden="true"
+          >
+          </div>
+          <Icon
+            name="mdi:github"
+            class="text-primary absolute size-1/2 sm:size-24"
+            aria-hidden="true"
+          />
+          <Link
+            href={SOCIAL_LINKS.find((link) => link.label === 'GitHub')?.href ||
+              '#'}
+            title="Visit my GitHub profile"
+            aria-label="Visit my GitHub profile"
+            external
+            class="bg-border/50 text-primary ring-ring group/github-link absolute end-0 bottom-0 m-3 rounded-full p-3 transition-[box-shadow] duration-300 hover:ring-2 focus-visible:ring-2"
+          >
+            <Icon
+              name="lucide:move-up-right"
+              class="transition-transform duration-300 group-hover/github-link:rotate-12"
+              size={16}
+            />
+          </Link>
         </div>
       </div>
     </div>
@@ -212,6 +233,7 @@ const skills = [
         <WakatimeGraph omitLanguages={['Markdown', 'JSON']} client:load />
       </div>
     </div>
+
     <!-- <div class="aspect-square p-2 [grid-area:j]"> -->
     <!--   <div class="bg-muted size-full border"> -->
     <!--     <div class="p-4 h-full"> -->
@@ -243,15 +265,52 @@ const skills = [
     <!-- </div> -->
 
     <!-- Fun Fact -->
-    <div class="aspect-square p-2 [grid-area:k]">
-      <div class="bg-muted size-full border">
-        <div class="p-4 h-full flex flex-col justify-center text-center">
-          <p class="text-sm text-muted-foreground mb-2">Fun fact:</p>
-          <p class="text-sm">
-            I love exploring new technologies and sharing what I learn!
-          </p>
+    <!-- <div class="aspect-square p-2 [grid-area:k]"> -->
+    <!--   <div class="bg-muted size-full border"> -->
+    <!--     <div class="p-4 h-full flex flex-col justify-center text-center"> -->
+    <!--       <p class="text-sm text-muted-foreground mb-2">Fun fact:</p> -->
+    <!--       <p class="text-sm"> -->
+    <!--         I love exploring new technologies and sharing what I learn! -->
+    <!--       </p> -->
+    <!--     </div> -->
+    <!--   </div> -->
+    <!-- </div> -->
+
+<div class="aspect-square p-2 [grid-area:k]">
+      <div data-trigger class="bg-muted size-full border">
+        <div
+          class="group/twitter relative flex size-full items-center justify-center bg-[url('/static/twitter-background.png')] bg-cover bg-center bg-no-repeat"
+        >
+          <div
+            class="size-full bg-[url('/static/twitter-foreground.png')] bg-cover bg-center bg-no-repeat transition-opacity duration-200 sm:opacity-0 sm:group-hover/twitter:opacity-100"
+            aria-hidden="true"
+          >
+            <p
+              class="text-foreground/80 bg-background absolute bottom-4 left-4 hidden border p-2 text-xs text-pretty sm:block"
+            >
+              TypeScript is<br />much better!
+            </p>
+          </div>
+          <Icon
+            name="mdi:twitter"
+            class="text-primary absolute size-1/2 sm:size-24"
+            aria-hidden="true"
+          />
+          <Link
+            href={SOCIAL_LINKS.find((link) => link.label === 'Twitter')?.href ||
+              '#'}
+            title="Visit my Twitter profile"
+            aria-label="Visit my Twitter profile"
+            external
+            class="bg-border/50 text-primary ring-ring group/twitter-link absolute end-0 bottom-0 m-3 rounded-full p-3 transition-[box-shadow] duration-300 hover:ring-2 focus-visible:ring-2"
+          >
+            <Icon
+              name="lucide:move-up-right"
+              class="transition-transform duration-300 group-hover/twitter-link:rotate-12"
+              size={16}
+            />
+          </Link>
         </div>
       </div>
-    </div>
   </section>
 </Layout>
