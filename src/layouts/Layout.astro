@@ -1,19 +1,19 @@
 ---
-import '@/styles/global.css'
-import '@/styles/typography.css'
+import "@/styles/global.css";
+import "@/styles/typography.css";
 
-import Footer from '@/components/Footer.astro'
-import Head from '@/components/Head.astro'
-import Header from '@/components/Header.astro'
-import { SITE } from '@/consts'
-import { cn } from '@/lib/utils'
-import MobileBottomNavigation from '@/components/MobileBottomNavigation.astro'
+import Footer from "@/components/Footer.astro";
+import Head from "@/components/Head.astro";
+import Header from "@/components/Header.astro";
+import { SITE } from "@/consts";
+import { cn } from "@/lib/utils";
+import MobileBottomNavigation from "@/components/MobileBottomNavigation.astro";
 
 interface Props {
-  class?: string
+  class?: string;
 }
 
-const { class: className } = Astro.props
+const { class: className } = Astro.props;
 ---
 
 <!doctype html>
@@ -22,7 +22,9 @@ const { class: className } = Astro.props
     <slot name="head" />
   </Head>
   <body>
-    <div class="flex h-fit min-h-screen flex-col gap-y-6 font-mono sm:mb-12 md:mb-0">
+    <div
+      class="flex h-fit min-h-screen flex-col gap-y-6 font-mono sm:mb-12 md:mb-0"
+    >
       <div
         class="bg-background/50 sticky top-0 z-50 divide-y backdrop-blur-sm xl:divide-none"
       >
@@ -31,7 +33,7 @@ const { class: className } = Astro.props
         <slot name="table-of-contents" />
       </div>
       <main class="grow">
-        <div class={cn('mx-auto flex grow flex-col gap-y-6 px-4', className)}>
+        <div class={cn("mx-auto flex grow flex-col gap-y-6 px-4", className)}>
           <slot />
         </div>
       </main>
