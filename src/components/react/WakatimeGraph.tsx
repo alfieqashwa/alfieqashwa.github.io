@@ -55,13 +55,19 @@ const chartConfig: ChartConfig = {
 };
 
 const CustomYAxisTick = ({ x, y, payload }: any) => {
-  const icon = getLanguageIcon(payload.value.toLowerCase());
+  // Fix: Add proper type checking and fallback
+  const languageName = payload?.value;
+  if (!languageName || typeof languageName !== "string") {
+    return null;
+  }
+
+  const icon = getLanguageIcon(languageName.toLowerCase());
   const centerX = x - 15;
   const centerY = y;
 
   return (
     <g transform={`translate(${centerX},${centerY})`}>
-      <title>{payload.value}</title>
+      <title>{languageName}</title>
       <rect
         x={-CIRCLE_RADIUS}
         y={-CIRCLE_RADIUS}
@@ -87,7 +93,7 @@ const CustomYAxisTick = ({ x, y, payload }: any) => {
             )
           ) : (
             <span className="text-foreground text-sm font-medium">
-              {payload.value.charAt(0).toUpperCase()}
+              {languageName.charAt(0).toUpperCase()}
             </span>
           )}
         </div>
