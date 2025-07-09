@@ -50,7 +50,7 @@ const chartConfig: ChartConfig = {
       ...acc,
       [`language${index}`]: { label: `Language ${index + 1}`, color },
     }),
-    {},
+    {}
   ),
 };
 
@@ -83,7 +83,7 @@ const CustomYAxisTick = ({ x, y, payload }: any) => {
               {
                 size: ICON_SIZE - 2,
                 className: "text-foreground",
-              } as any,
+              } as any
             )
           ) : (
             <span className="text-foreground text-sm font-medium">
@@ -130,7 +130,7 @@ const useWakatimeData = (omitLanguages: string[]) => {
         const data = await response.json();
         const processedLanguages = data.data
           .filter(
-            (lang: { name: string }) => !omitLanguages.includes(lang.name),
+            (lang: { name: string }) => !omitLanguages.includes(lang.name)
           )
           .slice(0, MAX_LANGUAGES)
           .map((lang: { name: string; hours: number }, index: number) => ({
@@ -142,7 +142,7 @@ const useWakatimeData = (omitLanguages: string[]) => {
         setLanguages(processedLanguages);
       } catch (err) {
         setError(
-          err instanceof Error ? err.message : "An unexpected error occurred",
+          err instanceof Error ? err.message : "An unexpected error occurred"
         );
       } finally {
         setIsLoading(false);
@@ -200,9 +200,7 @@ const WakatimeGraph = ({ omitLanguages = [] }: Props) => {
             dataKey="hours"
             position="right"
             formatter={(value) =>
-              typeof value === "number"
-                ? `${Math.round(value)}h`
-                : (value ?? "")
+              typeof value === "number" ? `${Math.round(value)}h` : value ?? ""
             }
             className="fill-foreground/80 font-medium"
             fontSize={13}
