@@ -7,7 +7,7 @@ import Head from "@/components/Head.astro";
 import Header from "@/components/Header.astro";
 import { SITE } from "@/consts";
 import { cn } from "@/lib/utils";
-import MobileBottomNavigation from "@/components/MobileBottomNavigation.astro";
+import {MobileBottomNavigation} from "@/components/react/MobileBottomNavigation.tsx";
 
 interface Props {
   class?: string;
@@ -40,6 +40,6 @@ const { class: className } = Astro.props;
       <Footer />
     </div>
 
-    <MobileBottomNavigation />
+    <MobileBottomNavigation client:load />
   </body>
 </html>
