@@ -6,17 +6,19 @@ const projects = [
   {
     title: "QozyCue - Billiard Management System",
     description: "A comprehensive billiard hall management system built with modern web technologies. Features real-time table tracking, customer management, and billing system.",
-    technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS"],
+    technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS", "Convex"],
     liveUrl: "https://www.qozycue.com/",
     githubUrl: "https://github.com/alfieqashwa/billiard-app",
     status: "Live",
     featured: true,
-    image: "/projects/qozycue-preview.jpg", // You can add screenshots later
+    image: "/projects/qozycue-preview.png", // You can add screenshots later
     highlights: [
-      "Real-time table status tracking",
-      "Customer management system", 
+      "Real-time pool table status tracking",
+      "Reports management system", 
       "Automated billing and invoicing",
-      "Admin dashboard with analytics"
+      "Admin & Owner dashboard with analytics",
+      "Documentation and support",
+      "AI assitant (soon)"
     ]
   },
   {
@@ -24,7 +26,7 @@ const projects = [
     description: "A modern queue management system with real-time status updates and flow control. Built with Docker for easy deployment and scalability.",
     technologies: ["Docker", "Node.js", "Queue Management", "Real-time Updates"],
     githubUrl: "https://github.com/alfieqashwa/queue-app",
-    status: "In Development",
+    status: "Live (offline)",
     featured: false,
     highlights: [
       "Real-time queue status tracking",
@@ -71,10 +73,16 @@ const projects = [
           <div class="grid lg:grid-cols-2 gap-6 lg:gap-8">
             <!-- Project Image/Preview -->
             <div class="bg-gradient-to-br from-primary/20 to-primary/5 p-6 sm:p-8 flex items-center justify-center min-h-[200px] sm:min-h-[300px]">
-              <div class="text-center">
+            {project.image ? (
+            <img src={project.image} alt={project.title} class="w-full h-full object-cover" />
+            ) 
+             : (
+
+               <div class="text-center">
                 <h3 class="text-base sm:text-lg font-semibold mb-2">Featured Project</h3>
                 <p class="text-muted-foreground text-sm">Screenshot coming soon</p>
               </div>
+            )}
             </div>
             
             <!-- Project Details -->
