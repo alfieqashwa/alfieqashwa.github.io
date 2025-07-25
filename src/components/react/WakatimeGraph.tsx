@@ -30,8 +30,9 @@ const CHART_COLORS = [
   "hsl(var(--chart-6))",
   "hsl(var(--chart-7))",
 ] as const;
+
 const WAKATIME_API_URL =
-  "https://wakatime.com/share/@alfieqashwa/70e41f95-f6a3-48ae-9319-19bc49e2a74e.json";
+  "https://wakatime.com/share/@alfieqashwa/16e492f0-ee0f-4b74-92fb-104a749a5f70.json";
 // "https://wakatime.com/share/@jktrn/ef6e633b-589d-44f2-9ae6-0eb93445cf2a.json";
 const MAX_LANGUAGES = 7;
 const ICON_SIZE = 20;
@@ -139,12 +140,18 @@ const useWakatimeData = (omitLanguages: string[]) => {
             (lang: { name: string }) => !omitLanguages.includes(lang.name)
           )
           .slice(0, MAX_LANGUAGES)
-          .map((lang: { name: string; hours: number }, index: number) => ({
-            name: lang.name,
-            hours: Number(lang.hours.toFixed(2)),
-            fill: CHART_COLORS[index % CHART_COLORS.length],
-          }));
+          .map((lang: any, index: number) => {
+            // ⚠ <-- Modify this part here
+            const secs =
+              lang.hours != null ? lang.hours * 3600 : lang.total_seconds;
+            const hours = +(secs / 3600).toFixed(2);
 
+            return {
+              name: lang.name,
+              hours,
+              fill: CHART_COLORS[index % CHART_COLORS.length],
+            };
+          });
         setLanguages(processedLanguages);
       } catch (err) {
         setError(
