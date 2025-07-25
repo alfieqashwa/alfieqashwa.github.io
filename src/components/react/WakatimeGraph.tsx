@@ -13,7 +13,7 @@ import { getLanguageIcon } from "@/components/react/LanguageIcons";
 
 interface Language {
   name: string;
-  hours: number;
+  percent: number;
   fill: string;
 }
 
@@ -39,8 +39,8 @@ const ICON_SIZE = 20;
 const CIRCLE_RADIUS = 16;
 
 const chartConfig: ChartConfig = {
-  hours: {
-    label: "Hours",
+  percent: {
+    label: "%",
     color: "var(--primary)",
   },
   label: {
@@ -136,22 +136,13 @@ const useWakatimeData = (omitLanguages: string[]) => {
 
         const data = await response.json();
         const processedLanguages = data.data
-          .filter(
-            (lang: { name: string }) => !omitLanguages.includes(lang.name)
-          )
+          .filter((lang: any) => !omitLanguages.includes(lang.name))
           .slice(0, MAX_LANGUAGES)
-          .map((lang: any, index: number) => {
-            // ⚠ <-- Modify this part here
-            const secs =
-              lang.hours != null ? lang.hours * 3600 : lang.total_seconds;
-            const hours = +(secs / 3600).toFixed(2);
-
-            return {
-              name: lang.name,
-              hours,
-              fill: CHART_COLORS[index % CHART_COLORS.length],
-            };
-          });
+          .map((lang: any, i: number) => ({
+            name: lang.name,
+            percent: typeof lang.percent === "number" ? lang.percent : 0,
+            fill: CHART_COLORS[i % CHART_COLORS.length],
+          }));
         setLanguages(processedLanguages);
       } catch (err) {
         setError(
@@ -208,12 +199,12 @@ const WakatimeGraph = ({ omitLanguages = [] }: Props) => {
         />
         <XAxis type="number" hide />
         <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
-        <Bar dataKey="hours" radius={[0, 0, 0, 0]} isAnimationActive={false}>
+        <Bar dataKey="percent" radius={[0, 0, 0, 0]} isAnimationActive={false}>
           <LabelList
-            dataKey="hours"
+            dataKey="percent"
             position="right"
             formatter={(value) =>
-              typeof value === "number" ? `${Math.round(value)}h` : value ?? ""
+              typeof value === "number" ? `${Math.round(value)}%` : value ?? ""
             }
             className="fill-foreground/80 font-medium"
             fontSize={13}
