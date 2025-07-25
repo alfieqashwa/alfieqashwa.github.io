@@ -31,8 +31,8 @@ const CHART_COLORS = [
   "hsl(var(--chart-7))",
 ] as const;
 const WAKATIME_API_URL =
-  // "https://wakatime.com/share/@alfieqashwa/70e41f95-f6a3-48ae-9319-19bc49e2a74e.json";
-  "https://wakatime.com/share/@jktrn/ef6e633b-589d-44f2-9ae6-0eb93445cf2a.json";
+  "https://wakatime.com/share/@alfieqashwa/70e41f95-f6a3-48ae-9319-19bc49e2a74e.json";
+// "https://wakatime.com/share/@jktrn/ef6e633b-589d-44f2-9ae6-0eb93445cf2a.json";
 const MAX_LANGUAGES = 7;
 const ICON_SIZE = 20;
 const CIRCLE_RADIUS = 16;
