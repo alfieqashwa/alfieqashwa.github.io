@@ -4,6 +4,23 @@ import Layout from "@/layouts/Layout.astro";
 
 const projects = [
   {
+    title: "Hisb Jummal Quran",
+    description: "A lightweight Quran reading application designed to help users organize and track their recitation using Hisb and Jummal structures. Built with a clean, distraction-free interface, the app focuses on clarity, speed, and ease of use across mobile and desktop devices.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    liveUrl: "https://hisb-jummal-quran.vercel.app/",
+    // githubUrl: "https://github.com/alfieqashwa/hisb-jummal-quran", // Assuming standard naming convention
+    status: "Live",
+    featured: true,
+    image: "/projects/hisb-jummal-preview.png",
+    highlights: [
+      "Structured digital Quran reading and progress tracking",
+      "Hisb & Jummal–based navigation for organized recitation",
+      "Clean, modern interface with a calm, spiritual aesthetic",
+      "Optimized for fast loading and smooth interactions",
+      "Fully responsive and accessible across mobile and desktop devices"
+    ]
+  },
+  {
     title: "QozyCue - Billiard Management System",
     description: "A comprehensive billiard hall management system built with modern web technologies. Features real-time table tracking, customer management, and billing system.",
     technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS", "Convex"],
@@ -138,9 +155,10 @@ const projects = [
                       <polyline points="15,3 21,3 21,9"/>
                       <line x1="10" y1="14" x2="21" y2="3"/>
                     </svg>
-                    Live Demo
+                    Live
                   </a>
                 )}
+              {project.githubUrl && (
                 <a 
                   href={project.githubUrl} 
                   target="_blank" 
@@ -152,6 +170,7 @@ const projects = [
                   </svg>
                   View Code
                 </a>
+              )}
               </div>
             </div>
           </div>
