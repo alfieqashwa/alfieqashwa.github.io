@@ -4,7 +4,7 @@ import {
   SiC,
   SiCplusplus,
   // SiCsharp,
-  SiCss3,
+  // SiCss3All,
   SiHtml5,
   SiJavascript,
   SiJson,
@@ -19,7 +19,7 @@ import {
 export const languageIcons: { [key: string]: IconType } = {
   astro: SiAstro,
   html: SiHtml5,
-  css: SiCss3,
+  css: SiC,
   javascript: SiJavascript,
   python: SiPython,
   c: SiC,
